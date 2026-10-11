@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio — Akinrinola Simon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body class="is-loading">
+        <div class="loader" role="status" aria-live="polite" aria-label="Loading page">
+            <div class="loader-spinner" aria-hidden="true"></div>
+            <p>Welcome</p>
+        </div>
+    
+    <div class="page-content">
+    <header class="site-header">
+        <div class="container header-inner">
+            <h1 class="brand">Akinrinola Simon Olaoluwa</h1>
+            <nav class="nav">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero container">
+            <div class="hero-text">
+                <h2>Hi, I'm Akinrinola Simon </h2>
+                <p class="lead">I build web experiences — front-end development, responsive design, and accessible interfaces.</p>
+                <p>
+                    <a class="btn primary" href="#projects">See my work</a>
+                    <a class="btn" href="#contact">Get in touch</a>
+                </p>
+            </div>
+            <div class="hero-photo" aria-hidden="true">
+                <img src="/image/profile.jpg" alt="profilr.png" />
+            </div>
+        </section>
+
+        <section id="about" class="container about">
+            <h3>About</h3>
+            <p>I’m a web developer focused on creating clean, user-friendly interfaces and delightful user experiences. I enjoy working with HTML, CSS, and JavaScript.</p>
+        </section>
+
+        <section id="projects" class="container projects">
+            <h3>Selected Projects</h3>
+            <div class="grid">
+                <article class="card">
+                    <div class="card-media">
+                        <img src="/image/Marea.png" alt="Marea.png">
+                    </div>
+                    <h4>Marea House</h4>
+                    <p>The kind of place that makes you forget to check your phone. <br> Tools: HTML, CSS, JS.</p>
+                    <p><a href="https://hotel-six-rho.vercel.app/" class="btn small">View</a></p>
+                </article>
+                <article class="card">
+                    <div class="card-media">
+                        <img src="/image/Weather App.png" alt="Weather App.png">
+                    </div>
+                    <h4>Weather App</h4>
+                    <p>It allows you to check the weather of a location.  <br> Tools: HTML, CSS, JS. </p>
+                    <p><a href="https://weather-app-one-mu-10.vercel.app/" class="btn small">View</a></p>
+                </article>
+                <article class="card">
+                    <div class="card-media">
+                        <img src="/image/ACME.png" alt="ACME.png">
+                    </div>
+                    <h4>ACME software Lab</h4>
+                    <p>At Acme, we create stunning responsive websites that are tailored to meet your business goals. <br> Tools: React, Node.</p>
+                    <p><a href="https://react-app-3w9j.vercel.app/" class="btn small">View</a></p>
+                </article>
+            </div>
+        </section>
+
+        <section id="skills" class="container skills">
+            <h3>Skills</h3>
+            <ul class="skills-list">
+                <li>HTML &amp; CSS</li>
+                <li>Responsive Design</li>
+                <li>JavaScript</li>
+                <li>Accessibility</li>
+                <li>React</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="container contact">
+            <h3>Contact</h3>
+            <p>If you'd like to work together, send an email to <a href="Gmail:akinrinolasimon@gmail.com">akinrinolasimon@gmail.com</a> or use the form below.</p>
+            <form class="contact-form" action="Gmail:akinrinolasimon@gmail.com" method="post" enctype="text/plain">
+                <label>
+                    Name
+                    <input type="text" name="name" required />
+                </label>
+                <label>
+                    Email
+                    <input type="email" name="email" required />
+                </label>
+                <label>
+                    Message
+                    <textarea name="message" rows="5" required></textarea>
+                </label>
+                <p><button class="btn primary" type="submit" <a href="https://mail.google.com/"></a> >Send</button></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">© <span id="year"></span> Akinrinola Simon Olaoluwa 
+            <p>Built with HTML &amp; CSS</p>
+        </div>
+    </footer>
+    </div>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        window.addEventListener('load', function () {
+            setTimeout(function () {
+                document.body.classList.remove('is-loading');
+            }, 2000);
+        });
+        
+    </script>
+</body>
+</html>
